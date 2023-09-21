@@ -37,5 +37,7 @@ button {
     background-color:rgba(0, 0, 0, 0.705);
     position: absolute;
     top:200px;
+    right: 0px;
+    width: 25%;
     color: white;
 }
