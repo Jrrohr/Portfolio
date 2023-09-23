@@ -33,12 +33,17 @@ button {
     object-fit: cover;
 }
 
-.carousel-caption {
-    background-color:rgba(0, 0, 0, 0.705);
-    position: absolute;
-    right: -100px;
-    width: 25%;
+.my-caption {
+    position:absolute;
+    background-color: rgba(0, 0, 0, 0.678);
     height: 100%;
-    padding-top: 40px;
-    color: white;
+    right: 50px;
+    top: 0px;
+    padding: 50px 20px;
+    width: 25%;
+    overflow: hidden;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    margin-top: 350px;
 }
