@@ -36,8 +36,9 @@ button {
 .carousel-caption {
     background-color:rgba(0, 0, 0, 0.705);
     position: absolute;
-    top:200px;
-    right: 0px;
+    right: -100px;
     width: 25%;
+    height: 100%;
+    padding-top: 40px;
     color: white;
 }
