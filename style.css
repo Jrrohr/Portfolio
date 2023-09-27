@@ -47,3 +47,36 @@ button {
 .carousel-control-next, .carousel-control-prev {
     margin-top: 350px;
 }
+
+.imgTile {
+	width: 200px;
+	height: 200px;
+	overflow: hidden;
+	position: relative;
+	background-color: black;
+    transition: .5s ease;
+}
+
+.imageSqrTile {
+    opacity: 1;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    backface-visibility: hidden;
+    width: 200px;
+    height: 200px;
+}
+
+.imgTile:hover {
+    transform: scale(1.1);
+}
+
+.flex {
+    display:flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.carousel {
+    margin-bottom: 10px;
+}
