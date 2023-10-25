@@ -9,7 +9,7 @@ body {
     background-color: rgb(37, 37, 37);
 }
 
-h1, h2, h3, p, button, nav {
+h1, h2, h3, h4, p, button, nav {
     margin: 20px auto;
 }
 
@@ -80,4 +80,12 @@ button {
 
 .carousel {
     margin-bottom: 100px;
+}
+
+.width65 {
+    width: 65%;
+}
+
+.width29 {
+    width: 29%;
 }
