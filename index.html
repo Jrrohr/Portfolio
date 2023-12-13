@@ -5,23 +5,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Jost:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>Jessica Rohr Portfolio</title>
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
 </head>
 
-<body>
+<body class="green">
     <div class="mainBody">
-        <h1>Jessica Rohr</h1>
-        <h2>Web Developer and Designer</h2>
-        <a href="img/Jessica Rohr Resume Dev 2023.pdf" download="Jessica Rohr Resume"><button>Resume</button></a>
-        <nav>
-            <p><a href="#web-design">Web</a> | <a href="#email-design">Email & Social Media</a> | <a href="#motion-video">Video & Motion Graphics</a> | <a href="#print">Print</a> | <a href="#logo">Logo</a> | <a href="#packaging">Packaging</a> | <a href="#about">About me</a>
-            </p>
-        </nav>
-        <h3 id="web-design">Web Design and Development</h3>
-        <p>Click to see full image</p>
+        <div class="greenBackground margin50">
+            <div class="mainHeading flex flexEnd">
+                <div>
+                    <h1 class="mainName">Jessica Rohr</h1>
+                    <h4>Web Developer and Designer</h4>
+                    <a href="img/Jessica Rohr Resume 2024.pdf" download="Jessica Rohr Resume"><button class="resume">Resume</button></a>
+                </div>
+                <div class="rightHeading">
+                    <p>Welcome to my portfolio! Please note it is still under construction. Scroll or navigate through my work or look into my skill set in the "About Me" section. You can also download my resume on the left.</p>
+                </div>
+            </div>
+            <nav class="navMargin">
+                <p><a href="#web-design">Web</a>&emsp;|&emsp;<a href="#email-design">Email & Social Media</a>&emsp;|&emsp;<a href="#motion-video">Video & Motion Graphics</a>&emsp;|&emsp;<a href="#print">Print Design</a>&emsp;|&emsp;<a href="#logo">Logo Design</a>&emsp;|&emsp;<a href="#packaging">Packaging & Retail Design</a>&emsp;|&emsp;<a href="#about">About me</a>
+                </p>
+            </nav>
+        </div>
+        <div class="flex">
+            <hr class="headerLines"/>
+            <h3 id="web-design" class="headerColor"><strong>Web Design & Development</strong></h3>
+            <hr class="headerLines"/>
+        </div>
+        <p>Click to see full screen image</p>
         <div id="carouselExampleCaptions" class="carousel carousel-dark slide">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -30,9 +46,23 @@
                     aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
                     aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
+                    <img src="img/Screenshot 2023-12-12 183023.png" class="d-block w-100" alt="..." onclick="this.requestFullscreen()">
+                    <div class="my-caption text-white">
+                        <h5>Get Out Group Project</h5>
+                        <p>Technical group project built using React and Javascript with MongoDB as a database. Started by building a wireframe and features plan and assigning roles to group members. Features include creating an account, posting social media posts with or without pictures, liking posts, and going to your profile to see all your posts.</p>
+                        <p>Group Members:</p>
+                        <p>Jessica Rohr: Front End Functionality</p>
+                        <p>Henry Chen: Back End Functionality</p>
+                        <p>Alexandra Riano: HTML and CSS, Front End Design</p>
+                        <p><a href="https://github.com/0xhenrychen/coding-dojo-group-project">https://github.com/0xhenrychen/coding-dojo-group-project</a></p>
+                    </div>
+                </div>
+                <div class="carousel-item">
                     <img src="img/Travelbucketlistpage.jpg" class="d-block w-100" alt="..." onclick="this.requestFullscreen()">
                     <div class="my-caption text-white">
                         <h5>Travel Bucket List</h5>
@@ -67,53 +97,67 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-        <h3 id="email-design">Email & Social Media Design</h3>
-        <p>Click to see full image</p>
-        <h4>Social Media Designs</h4>
         <div class="flex">
-            <div class="imgTile">
-                <a href="img/janicki.jpg" target="_blank"><img src="img/August 18.png" class="imageSqrTile"></a>
-            </div>
-            <div class="imgTile">
-                <a href="img/August 26.png" target="_blank"><img src="img/August 26.png" class="imageSqrTile"></a>
-            </div>
-            <div class="imgTile">
-                <a href="img/31 National Dress Your Pet Day.jpg" target="_blank"><img src="img/31 National Dress Your Pet Day.jpg" class="imageSqrTile"></a>
-            </div>
-            <div class="imgTile">
-                <a href="img/Happy New Year 2020.jpg" target="_blank"><img src="img/Happy New Year 2020.jpg" class="imageSqrTile"></a>
-            </div>
-            <div class="imgTile">
-                <a href="img/Anti-fog_Social Media.jpg" target="_blank"><img src="img/Anti-fog_Social Media.jpg" class="imageSqrTile"></a>
-            </div>
-            <div class="imgTile">
-                <a href="img/You Are Critical Social Media 1.jpg" target="_blank"><img src="img/You Are Critical Social Media 1.jpg" class="imageSqrTile"></a>
-            </div>
-            <div class="imgTile">
-                <a href="img/FB_IMG_1581696696254.jpg" target="_blank"><img src="img/FB_IMG_1581696696254.jpg" class="imageSqrTile"></a>
-            </div>
-            <div class="imgTile">
-                <a href="img/FB_IMG_1581701724646.jpg" target="_blank"><img src="img/FB_IMG_1581701724646.jpg" class="imageSqrTile"></a>
-            </div>
-            <div class="imgTile">
-                <a href="img/FB_IMG_1581706249996.jpg" target="_blank"><img src="img/FB_IMG_1581706249996.jpg" class="imageSqrTile"></a>
-            </div>
-            <div class="imgTile">
-                <a href="img/FB_IMG_1581710640016.jpg" target="_blank"><img src="img/FB_IMG_1581710640016.jpg" class="imageSqrTile"></a>
-            </div>
-            <div class="imgTile">
-                <a href="img/FB_IMG_1581714821225.jpg" target="_blank"><img src="img/FB_IMG_1581714821225.jpg" class="imageSqrTile"></a>
-            </div>
-            <div class="imgTile">
-                <a href="img/FB_IMG_1581719729524.jpg" target="_blank"><img src="img/FB_IMG_1581719729524.jpg" class="imageSqrTile"></a>
+            <hr class="headerLines"/>
+            <h3 id="email-design" class="headerColor"><strong>Email & Social Media Design</strong></h3>
+            <hr class="headerLines"/>
+        </div>
+        <div class="turquoise">
+        <h4>Social Media Designs</h4>
+        <p>Click to see full image</p>
+            <div class="flex margin20">
+                <div class="imgTile">
+                    <a href="img/janicki.jpg" target="_blank"><img src="img/August 18.png" class="imageSqrTile"></a>
+                </div>
+                <div class="imgTile">
+                    <a href="img/August 26.png" target="_blank"><img src="img/August 26.png" class="imageSqrTile"></a>
+                </div>
+                <div class="imgTile">
+                    <a href="img/31 National Dress Your Pet Day.jpg" target="_blank"><img src="img/31 National Dress Your Pet Day.jpg" class="imageSqrTile"></a>
+                </div>
+                <div class="imgTile">
+                    <a href="img/Happy New Year 2020.jpg" target="_blank"><img src="img/Happy New Year 2020.jpg" class="imageSqrTile"></a>
+                </div>
+                <div class="imgTile">
+                    <a href="img/Anti-fog_Social Media.jpg" target="_blank"><img src="img/Anti-fog_Social Media.jpg" class="imageSqrTile"></a>
+                </div>
+                <div class="imgTile">
+                    <a href="img/You Are Critical Social Media 1.jpg" target="_blank"><img src="img/You Are Critical Social Media 1.jpg" class="imageSqrTile"></a>
+                </div>
+                <div class="imgTile">
+                    <a href="img/FB_IMG_1581696696254.jpg" target="_blank"><img src="img/FB_IMG_1581696696254.jpg" class="imageSqrTile"></a>
+                </div>
+                <div class="imgTile">
+                    <a href="img/FB_IMG_1581701724646.jpg" target="_blank"><img src="img/FB_IMG_1581701724646.jpg" class="imageSqrTile"></a>
+                </div>
+                <div class="imgTile">
+                    <a href="img/FB_IMG_1581706249996.jpg" target="_blank"><img src="img/FB_IMG_1581706249996.jpg" class="imageSqrTile"></a>
+                </div>
+                <div class="imgTile">
+                    <a href="img/FB_IMG_1581710640016.jpg" target="_blank"><img src="img/FB_IMG_1581710640016.jpg" class="imageSqrTile"></a>
+                </div>
+                <div class="imgTile">
+                    <a href="img/FB_IMG_1581714821225.jpg" target="_blank"><img src="img/FB_IMG_1581714821225.jpg" class="imageSqrTile"></a>
+                </div>
+                <div class="imgTile">
+                    <a href="img/FB_IMG_1581719729524.jpg" target="_blank"><img src="img/FB_IMG_1581719729524.jpg" class="imageSqrTile"></a>
+                </div>
             </div>
         </div>
         <h4>Email Designs</h4>
-        <p class="carousel">Placeholder</p>
-        <h3 id="motion-video">Video & Motion Graphics</h3>
-        <div class="flex ">
+        <p>Email design sent out to customers advertising antibacteribal gloves during the COVID-19 pandemic</p>
+        <div class="flex margin20">
+            <img src="img/Antibacterial Email Design_1 (1).jpg" style="width: 48%">
+            <img src="img/Antibacterial Email Design_2 (1).jpg" style="width: 48%">
+        </div>
+        <div class="flex">
+            <hr class="headerLines"/>
+            <h3 id="motion-video" class="headerColor"><strong>Video & Motion Graphics</strong></h3>
+            <hr class="headerLines"/>
+        </div>
+        <div class="flex turquoise center">
             <p class="width65"><iframe width="100%" style="aspect-ratio: 16/9" src="https://www.youtube.com/embed/kp1T-V6cZuA?si=nhnGDxtUO7J5e3yO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
-            <p class="width29">My team and I filmed all the footage for this video and then I put together and edited everything using Adobe Premier Pro.</p>
+            <p class="width29 aboutMe">My team and I filmed all the footage for this video and then I put together and edited everything using Adobe Premier Pro.</p>
         </div>
         <p>Click to see full image</p>
         <div id="carouselMotionCaptions" class="carousel carousel-dark slide">
@@ -195,7 +239,11 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-        <h3 id="print">Print Design</h3>
+        <div class="flex">
+            <hr class="headerLines"/>
+            <h3 id="print" class="headerColor"><strong>Print Design</strong></h3>
+            <hr class="headerLines"/>
+        </div>
         <p>Click to see full image</p>
         <div id="carouselPrintCaptions" class="carousel carousel-dark slide">
             <div class="carousel-indicators">
@@ -216,52 +264,52 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="img/6 Steps Brochure_2022-01 (1).png" class="d-block w-100" alt="..." onclick="this.requestFullscreen()">
+                    <img src="img/6 Steps Brochure_2022-01 (1).png" class="d-block carouselSmallImg" alt="..." onclick="this.requestFullscreen()">
                     <div class="my-caption text-white">
                         <h5>4 Page Brochure Cover</h5>
-                        <p>Built a safety topics web page using HTML and Magento.</p>
+                        <p>Front Side of a 4 page brochure printed on 11x17 paper and folded in half.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="img/6 Steps Brochure_2022-02 (1).png" class="d-block w-100" alt="..." onclick="this.requestFullscreen()">
+                    <img src="img/6 Steps Brochure_2022-02 (1).png" class="d-block carouselSmallImg" alt="..." onclick="this.requestFullscreen()">
                     <div class="my-caption text-white">
                         <h5>4 Page Brochure Inside Spread</h5>
-                        <p>Watch for subtle movement and lightning!</p>
+                        <p>Inside spread of brochure.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="img/6 Steps Brochure_2022-03 (1).png" class="d-block w-100" alt="..." onclick="this.requestFullscreen()">
+                    <img src="img/6 Steps Brochure_2022-03 (1).png" class="d-block carouselSmallImg" alt="..." onclick="this.requestFullscreen()">
                     <div class="my-caption text-white">
                         <h5>4 Page Brochure Back Cover</h5>
-                        <p>Watch for subtle movement</p>
+                        <p>Back cover of brochure.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="img/ACE TOOL_Personalization Promotion Flyer (1).jpg" class="d-block w-100" alt="..." onclick="this.requestFullscreen()">
+                    <img src="img/ACE TOOL_Personalization Promotion Flyer (1).jpg" class="d-block carouselSmallImg" alt="..." onclick="this.requestFullscreen()">
                     <div class="my-caption text-white">
                         <h5>1 Page Printed Flyer</h5>
-                        <p>Watch for subtle movement</p>
+                        <p>Designed to be printed on 8.5x11 paper.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="img/AIH Banners-02.jpg" class="d-block w-100" alt="..." onclick="this.requestFullscreen()">
+                    <img src="img/AIH Banners-02.jpg" class="d-block carouselSmallImg" alt="..." onclick="this.requestFullscreen()">
                     <div class="my-caption text-white">
                         <h5>Printed Showroom Banner</h5>
-                        <p>Watch for subtle movement</p>
+                        <p>Large banner designed to be printed and hung in a showroom.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="img/Full Page Kevlar Ad Draft.jpg" class="d-block w-100" alt="..." onclick="this.requestFullscreen()">
+                    <img src="img/Full Page Kevlar Ad Draft.jpg" class="d-block carouselSmallImg" alt="..." onclick="this.requestFullscreen()">
                     <div class="my-caption text-white">
                         <h5>1 Page Printed Flyer</h5>
-                        <p>Watch for subtle movement</p>
+                        <p>Designed to be printed on 8.5x11 paper for a tradeshow.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="img/JR-07.jpg" class="d-block w-100" alt="..." onclick="this.requestFullscreen()">
+                    <img src="img/JR-07.jpg" class="d-block carouselSmallImg" alt="..." onclick="this.requestFullscreen()">
                     <div class="my-caption text-white">
                         <h5>Business Card Mockup Design</h5>
-                        <p>Took images using a spinning base and stitched them together to be used for the website with magnifying detail.</p>
+                        <p>Printed in standard business card size.</p>
                     </div>
                 </div>
             </div>
@@ -276,27 +324,162 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-        <h3 id="logo">Logo Design</h3>
+        <div class="flex">
+            <hr class="headerLines"/>
+            <h3 id="logo" class="headerColor"><strong>Logo Design</strong></h3>
+            <hr class="headerLines"/>
+        </div>
         <p>Click to see full image</p>
-        <h3 id="packaging">Packaging & Retail Design</h3>
+        <div id="carouselLogoCaptions" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselLogoCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselLogoCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselLogoCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselLogoCaptions" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselLogoCaptions" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselLogoCaptions" data-bs-slide-to="5"
+                    aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#carouselLogoCaptions" data-bs-slide-to="6"
+                    aria-label="Slide 7"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/Blue Rae Full (1).png" class="d-block w-100" alt="..." onclick="this.requestFullscreen()">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/FOM-2 (1).png" class="d-block w-100" alt="..." onclick="this.requestFullscreen()">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/ResisTEX.png" class="d-block w-100" alt="..." onclick="this.requestFullscreen()">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Executive_Apparel.jpg" class="d-block carouselSmallImg" alt="..." onclick="this.requestFullscreen()">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Strongarm Gym.jpg" class="d-block carouselSmallImg" alt="..." onclick="this.requestFullscreen()">
+                    <div class="my-caption text-white">
+                        <h5>Personal Project Logo Design</h5>
+                        <p>Logo design for a personal project for a friend. On the left is the concept provided to me, on the right is my finished product.</p>
+                        <p>DISCLAIMER: The original drawing is not mine. This logo is being used only for personal, private use and will not be made public or used for commercial use. Please follow link to find original drawing by Kazeo YuuRin.</p>
+                        <p><a href="https://www.deviantart.com/kazeo-yuurin/art/Muscle-Pose-Practice-with-Alex-Louis-Armstrong-547364673">https://www.deviantart.com/kazeo-yuurin/art/Muscle-Pose-Practice-with-Alex-Louis-Armstrong-547364673</a></p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Lets Taco Bout Safety-01 (1).jpg" class="d-block carouselSmallImg" alt="..." onclick="this.requestFullscreen()">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Phoenix-01.jpg" class="d-block carouselSmallImg" alt="..." onclick="this.requestFullscreen()">
+                    <div class="my-caption text-white">
+                        <h5>Development Concepts for Phoenix Logo</h5>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselLogoCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselLogoCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="flex">
+            <hr class="headerLines"/>
+            <h3 id="packaging" class="headerColor"><strong>Packaging & Retail Design</strong></h3>
+            <hr class="headerLines"/>
+        </div>
         <p>Click to see full image</p>
-        <p class="flex"><img src="img/iDEASbox Contents V2 Square (1).png" class="width29" onclick="this.requestFullscreen()"><img src="img/Inside of the iDEASbox (1).png" class="width29" onclick="this.requestFullscreen()"><img src="img/Eco Box Booklet (1).png" class="width29" onclick="this.requestFullscreen()"></p>
+        <div class="flex"><img src="img/iDEASbox Contents V2 Square (1).png" class="width29" onclick="this.requestFullscreen()"><img src="img/Inside of the iDEASbox (1).png" class="width29" onclick="this.requestFullscreen()"><img src="img/Eco Box Booklet (1).png" class="width29" onclick="this.requestFullscreen()"></div>
+        <div class="flex">
+            <img src="img/3237AL Tags (1).jpg" style="width: 48%" onclick="this.requestFullscreen()"><img src="img/IMG_20200205_151059 (1).jpg" style="width: 48%" onclick="this.requestFullscreen()">
+        </div>
         <p class="flex">
-            <img src="img/3237AL Tags (1).jpg" style="width: 48%"><img src="img/IMG_20200205_151059 (1).jpg" style="width: 48%">
+            <img src="img/3273_Box Design.jpg" style="width: 48%" onclick="this.requestFullscreen()"><img src="img/3273_Box.jpg" style="width: 48%" onclick="this.requestFullscreen()">
         </p>
         <p class="flex">
-            <img src="img/3273_Box Design.jpg" style="width: 48%"><img src="img/3273_Box.jpg" style="width: 48%">
+            <img src="img/Hang Tag Concept-01.jpg" style="width: 48%" onclick="this.requestFullscreen()"><img src="img/Window Tag Concept-01.jpg" style="width: 48%" onclick="this.requestFullscreen()">
         </p>
         <p class="flex">
-            <img src="img/Hang Tag Concept-01.jpg" style="width: 48%"><img src="img/Window Tag Concept-01.jpg" style="width: 48%">
+            <img src="img/Mask Inner Bag-03.jpg" style="width: 48%" onclick="this.requestFullscreen()"><img src="img/Glove Bags-03.jpg" style="width: 23%" onclick="this.requestFullscreen()"><img src="img/Glove Bags-04.jpg" style="width: 23%" onclick="this.requestFullscreen()">
         </p>
-        <p class="flex">
-            <img src="img/Mask Inner Bag-03.jpg" style="width: 48%"><img src="img/Glove Bags-03.jpg" style="width: 23%"><img src="img/Glove Bags-04.jpg" style="width: 23%">
-        </p>
-        <h3 id="about">About Me</h3>
-        <p>Click to see full image</p>
+        <p><img src="img/30-1000 C Card Full Color-01.jpg" style="width: 100%" onclick="this.requestFullscreen()"> Mockup with die and fold lines of a folding cardboard piece inserted into package of gloves.</p>
+        <div class="flex">
+            <hr class="headerLines"/>
+            <h3 id="about" class="headerColor"><strong>About Me</strong></h3>
+            <hr class="headerLines"/>
+        </div>
+        <p class="aboutMe">Full Stack Web Developer and Graphic Designer. Software Development <a href="https://app.diplomasafe.com/en-US/diploma/d338f2215ef7b951cafa410ef543ad3af3ff9fd0a/software-development-online-part-time-accelerated">certificate</a> from Coding Dojo with black belts in JavaScript/React, Java and Python/Flask/MySQL. Specializing in front end development and skilled in Adobe Creative Suite, Microsoft Office Suite, Digital Photography, and B2B Marketing. Graduated cum laude with a Bachelor of Arts - Graphic Design from Whitworth University. Current active DOD Secret Clearance.</p>
+        <div class="turquoise">
+            <h4>Skills</h4>
+            <p>Search here for a desired skill!</p>
+            <input type="text" id="mySearch" class="margin20" onkeyup="searchSkills()" placeholder="Search.." title="Type in a category">
+            <ul class="skills" id="mySkills">
+                <li>Python</li>
+                <li>Flask</li>
+                <li>JavaScript</li>
+                <li>Java</li>
+                <li>Spring Boot</li>
+                <li>MySQL</li>
+                <li>MongoDB</li>
+                <li>Node.js</li>
+                <li>React.js</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>API</li>
+                <li>jQuery</li>
+                <li>AWS (EC2)</li>
+                <li>Axios</li>
+                <li>AJAX</li>
+                <li>JSX</li>
+                <li>Jinja2</li>
+                <li>Bootstrap</li>
+                <li>JSON</li>
+                <li>Express</li>
+                <li>Mongoose</li>
+                <li>RegEx</li>
+                <li>Bcrypt</li>
+                <li>Drupal</li>
+                <li>Magento</li>
+                <li>VS Code</li>
+                <li>Adobe Creative Suite</li>
+                <li>Microsoft Office</li>
+                <li>OOP</li>
+                <li>MVC</li>
+                <li>Marketing</li>
+                <li>HubSpot</li>
+                <li>Benchmark</li>
+                <li>Google Ads</li>
+                <li>Digital Photography</li>
+                <li>Graphic Design</li>
+                <li>Social Media Marketing</li>
+                <li>Email Marketing</li>
+                <li>SEO</li>
+                <li>Print Production</li>
+                <li>Copywriting</li>
+                <li>SAP</li>
+                <li>Project Managment</li>
+                <li>Agile</li>
+                <li>Scrum</li>
+                <li>Multi-line Phone Systems</li>
+                <li>Administrative Assistance</li>
+                <li>Multi-Tasking</li>
+                <li>Problem Solving</li>
+                <li>Communication</li>
+            </ul>
+        </div>
+        <div class="greenBackground">
+            <p>Thank you for visiting my portfolio! If you have any questions, please contact me at <u>jbanzet17@gmail.com</u></p>
+        </div>
     </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="script.js"></script>
 </html>
